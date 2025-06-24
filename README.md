@@ -47,7 +47,6 @@ After downloading, place both files (`fake.csv` and `true.csv`) in the root fold
 - Visualize confusion matrix with heatmap
 
 ### Step 8: Model Saving for Deployment
-
 Once the model is trained and evaluated, we save the important components using `joblib`:
 
 - `lr_model.pkl` → Trained Logistic Regression model
@@ -55,6 +54,8 @@ Once the model is trained and evaluated, we save the important components using 
 
 These files will be reused in the Streamlit app to load the model instantly and avoid retraining.
 
+### Step 9: Streamlit Web Application for Prediction
+A simple Streamlit web app (app_ui.py) allows users to paste news content (headline or full article) for instant fake/real classification with confidence scores, by loading the pre-trained model and TF-IDF vectorizer.
 
 
 ## 📦 Required Libraries
